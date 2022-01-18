@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResiliaFlix</title>
+    <!--JS-->
+    <script defer src="assets/js/search-movie.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"/>
+  </head>
+
+  <body>
+    <div class="general">
+      <div class="container">
+        <header>
+          <!-- Top bar -->
+          <nav class="top-bar">
+            <div class="logo">
+              <img src="../../img/logo.png" alt="logo" />
+            </div>
+            <div class="links">
+              <a href="../home-movies/home-movies.html">INÍCIO</a>
+              <a href="../search-movie/search-movie.html">FILMES</a>
+              <a href="#">FAVORITOS</a>
+            </div>
+            <div class="user">
+              <i class="bi bi-person-circle"></i>
+            </div>
+          </nav>
+        </header>
+
+        <div class="search">
+          <form class="form">
+            <div>
+              <i class="bi bi-search"></i>
+              <input
+                class="search-movie"
+                type="text"
+                placeholder="Digite o filme "
+              />
+            </div>
+            
+          </form>
+        </div>
+        <main class="container-movie"></main>
+      </div>
+    </div>
+  </body>
+</html>

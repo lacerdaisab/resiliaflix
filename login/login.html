@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <!--JS-->
+    <script defer src="assets/js/login.js"></script>
     <!--CSS-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!--Bootstrap-->
     <link
       rel="stylesheet"
-      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
-    <script defer src="login.js"></script>
   </head>
 
   <body>
@@ -21,18 +22,21 @@
         <form class="login-form">
           <!--Logo ResiliaFlix-->
           <div class="logo">
-            <img src="../img/logo.png" alt="logo resilia" />
+            <img src="../img/logo/logo-resiliaflix.png" alt="ResiliaFlix" />
           </div>
           <!--Email input-->
           <div class="email">
             <input
               type="email"
+              name="email"
               class="email-input"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               title="exemplo@exemplo.com"
+              
               required
             />
             <label>E-mail</label>
+            <div id="msgemail"></div>
           </div>
           <!--Password input-->
           <div>
@@ -46,7 +50,7 @@
             <label>Senha</label>
             <!--Icon eye-->
             <div>
-              <i class="bi bi-eye"></i>
+              <i class="bi bi-eye-slash"></i>
             </div>
           </div>
           <!--Recover password-->
@@ -56,19 +60,23 @@
           <!--Enter button-->
           <div class="container-enter-button">
             <button class="enter-button">
-              <a class="enter" href="../home-filmes/index.html">Entrar</a>
+              <div class="enter">Entrar</a>
             </button>
           </div>
           <!--Registration link-->
           <div class="container-registration">
             <p class="registration-msg">Ainda não possui conta?</p>
             <a href="../register/register.html" class="registration-link">Cadastre-se</a>
+            <!-- Reply icon -->
+            <div>
+              <i class="bi bi-reply-fill" id="register-reply-icon"></i>
+            </div>
           </div>
           <!--Techtalents button-->
           <div class="container-techtalents">
             <button class="techtalents-button">
-              ACESSO COM TECHTALENTS
-            </button>
+              ACESSO COM TECHTALENTS 
+              </button>
           </div>
         </form>
       </div>
